@@ -10,6 +10,10 @@
     "description": "The Hyperf notification package.",
     "authors": [
         {
+            "name": "Eric Zhu",
+            "email": "eric@zhu.email"
+        },
+        {
             "name": "Taufiq Vhunakoshi",
             "email": "vhunakoshi@email.com"
         }
