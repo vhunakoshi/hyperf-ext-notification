@@ -3,9 +3,9 @@
 $header = <<<'EOF'
 This file is part of hyperf-ext/notifications.
 
-@link     https://github.com/hyperf-ext/notifications
+@link     https://github.com/vhunakoshi/hyperf-ext-notifications
 @contact  eric@zhu.email
-@license  https://github.com/hyperf-ext/notifications/blob/master/LICENSE
+@license  https://github.com/vhunakoshi/hyperf-ext-notifications/blob/master/LICENSE
 EOF;
 
 return (new PhpCsFixer\Config())
