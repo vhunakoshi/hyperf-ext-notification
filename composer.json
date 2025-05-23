@@ -1,0 +1,68 @@
+{
+    "name": "vhunakoshi/hyperf-ext-notifications",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "notification"
+    ],
+    "description": "The Hyperf notification package.",
+    "authors": [
+        {
+            "name": "Taufiq Vhunakoshi",
+            "email": "vhunakoshi@email.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HyperfExt\\Notifications\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\Notifications\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "ext-swoole": "*",
+        "hyperf/async-queue": "^3.1",
+        "hyperf/command": "^3.1",
+        "hyperf/config": "^3.1",
+        "hyperf/devtool": "^3.1",
+        "hyperf/di": "^3.1",
+        "hyperf/event": "^3.1",
+        "hyperf/framework": "^3.1",
+        "hyperf/logger": "^3.1",
+        "ramsey/uuid": "^4.7",
+        "swoole/ide-helper": "^6.0",
+        "vhunakoshi/hyperf-ext-contract": "dev-main"
+    },
+    "suggest": {
+        "hyperf-ext/mail": "Required to use the mail transport (^3.1).",
+        "hyperf-ext/sms": "Required to use the SMS transport (^3.1).",
+        "hyperf/database": "Required to use the database transport (^3.1)."
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "co-phpunit --prepend tests/bootstrap.php -c phpunit.xml --colors=always",
+        "analyse": "phpstan analyse --memory-limit 1024M -l 0 ./src",
+        "cs-fix": "php-cs-fixer fix $1"
+    },
+    "extra": {
+        "hyperf": {
+            "config": "HyperfExt\\Notifications\\ConfigProvider"
+        }
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.75",
+        "hyperf/testing": "^3.1",
+        "mockery/mockery": "^1.6",
+        "phpstan/phpstan": "^2.1"
+    }
+}

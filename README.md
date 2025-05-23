@@ -1,1 +1,3 @@
-# hyperf-ext-notification
+# Hyperf 消息通知组件
+
+开发中，请勿用于生产环境！
