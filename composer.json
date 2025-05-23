@@ -27,6 +27,7 @@
     "require": {
         "php": ">=8.0",
         "ext-swoole": "*",
+        "hyperf/async-queue": "^3.1",
         "hyperf/command": "^3.1",
         "hyperf/config": "^3.1",
         "hyperf/devtool": "^3.1",
@@ -34,7 +35,6 @@
         "hyperf/event": "^3.1",
         "hyperf/framework": "^3.1",
         "hyperf/logger": "^3.1",
-        "menumbing/async-queue": "^1.0@dev",
         "ramsey/uuid": "^4.7",
         "vhunakoshi/hyperf-ext-contract": "dev-main"
     },
