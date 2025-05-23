@@ -36,7 +36,6 @@
         "hyperf/framework": "^3.1",
         "hyperf/logger": "^3.1",
         "ramsey/uuid": "^4.7",
-        "swoole/ide-helper": "^6.0",
         "vhunakoshi/hyperf-ext-contract": "dev-main"
     },
     "suggest": {
@@ -63,6 +62,7 @@
         "friendsofphp/php-cs-fixer": "^3.75",
         "hyperf/testing": "^3.1",
         "mockery/mockery": "^1.6",
-        "phpstan/phpstan": "^2.1"
+        "phpstan/phpstan": "^2.1",
+        "swoole/ide-helper": "^6.0"
     }
 }
