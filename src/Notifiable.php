@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-notifications/blob/master/LICENSE
  */
-namespace HyperfExt\Notifications;
+namespace Vhunakoshi\Notifications;
 
 trait Notifiable
 {

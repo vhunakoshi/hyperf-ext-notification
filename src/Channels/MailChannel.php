@@ -8,19 +8,19 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-notifications/blob/master/LICENSE
  */
-namespace HyperfExt\Notifications\Channels;
+namespace Vhunakoshi\Notifications\Channels;
 
-use HyperfExt\Mail\Contracts\MailManagerInterface;
-use HyperfExt\Notifications\Contracts\ChannelInterface;
-use HyperfExt\Notifications\Contracts\Notification;
-use HyperfExt\Notifications\Messages\MailMessage;
+use Vhunakoshi\Mail\Contracts\MailManagerInterface;
+use Vhunakoshi\Notifications\Contracts\ChannelInterface;
+use Vhunakoshi\Notifications\Contracts\Notification;
+use Vhunakoshi\Notifications\Messages\MailMessage;
 
 class MailChannel implements ChannelInterface
 {
     /**
      * The mailer implementation.
      *
-     * @var \HyperfExt\Mail\Contracts\MailManagerInterface
+     * @var \Vhunakoshi\Mail\Contracts\MailManagerInterface
      */
     protected $mailer;
 
@@ -40,7 +40,7 @@ class MailChannel implements ChannelInterface
      */
     public function send($notifiable, Notification $notification)
     {
-        /** @var \HyperfExt\Mail\Mailable $message */
+        /** @var \Vhunakoshi\Mail\Mailable $message */
         $message = $notification->toMail($notifiable);
 
         if (empty($recipients = $notifiable->routeNotificationFor(static::class, $notification)) && ! $message instanceof MailMessage) {

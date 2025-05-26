@@ -8,11 +8,11 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-notifications/blob/master/LICENSE
  */
-namespace HyperfExt\Notifications;
+namespace Vhunakoshi\Notifications;
 
-use HyperfExt\Notifications\Commands\GenNotificationCommand;
-use HyperfExt\Notifications\Commands\NotificationTableCommand;
-use HyperfExt\Notifications\Contracts\NotificationDispatcherInterface;
+use Vhunakoshi\Notifications\Commands\GenNotificationCommand;
+use Vhunakoshi\Notifications\Commands\NotificationTableCommand;
+use Vhunakoshi\Notifications\Contracts\NotificationDispatcherInterface;
 
 class ConfigProvider
 {

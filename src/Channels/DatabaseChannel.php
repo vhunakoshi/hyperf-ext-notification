@@ -8,10 +8,10 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-notifications/blob/master/LICENSE
  */
-namespace HyperfExt\Notifications\Channels;
+namespace Vhunakoshi\Notifications\Channels;
 
-use HyperfExt\Notifications\Contracts\ChannelInterface;
-use HyperfExt\Notifications\Contracts\Notification;
+use Vhunakoshi\Notifications\Contracts\ChannelInterface;
+use Vhunakoshi\Notifications\Contracts\Notification;
 use RuntimeException;
 
 class DatabaseChannel implements ChannelInterface

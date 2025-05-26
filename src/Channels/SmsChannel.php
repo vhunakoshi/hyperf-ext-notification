@@ -8,13 +8,13 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-notifications/blob/master/LICENSE
  */
-namespace HyperfExt\Notifications\Channels;
+namespace Vhunakoshi\Notifications\Channels;
 
-use HyperfExt\Notifications\Contracts\ChannelInterface;
-use HyperfExt\Notifications\Contracts\Notification;
-use HyperfExt\Notifications\Messages\SmsMessage;
-use HyperfExt\Sms\Contracts\MobileNumberInterface;
-use HyperfExt\Sms\Contracts\SmsManagerInterface;
+use Vhunakoshi\Notifications\Contracts\ChannelInterface;
+use Vhunakoshi\Notifications\Contracts\Notification;
+use Vhunakoshi\Notifications\Messages\SmsMessage;
+use Vhunakoshi\Sms\Contracts\MobileNumberInterface;
+use Vhunakoshi\Sms\Contracts\SmsManagerInterface;
 use LogicException;
 
 class SmsChannel implements ChannelInterface
@@ -22,7 +22,7 @@ class SmsChannel implements ChannelInterface
     /**
      * The mailer implementation.
      *
-     * @var \HyperfExt\Sms\Contracts\SmsManagerInterface
+     * @var \Vhunakoshi\Sms\Contracts\SmsManagerInterface
      */
     protected $smsManager;
 
@@ -42,7 +42,7 @@ class SmsChannel implements ChannelInterface
      */
     public function send($notifiable, Notification $notification)
     {
-        /** @var \HyperfExt\Sms\Contracts\SmsMessageInterface $message */
+        /** @var \Vhunakoshi\Sms\Contracts\SmsMessageInterface $message */
         $message = $notification->toSms($notifiable);
 
         if (empty($recipient = $notifiable->routeNotificationFor(static::class, $notification)) && ! $message instanceof SmsMessage) {

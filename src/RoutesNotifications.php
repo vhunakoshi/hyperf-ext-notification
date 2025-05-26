@@ -8,14 +8,14 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-notifications/blob/master/LICENSE
  */
-namespace HyperfExt\Notifications;
+namespace Vhunakoshi\Notifications;
 
 use Hyperf\Utils\ApplicationContext;
 use Hyperf\Utils\Arr;
-use HyperfExt\Notifications\Channels\DatabaseChannel;
-use HyperfExt\Notifications\Channels\MailChannel;
-use HyperfExt\Notifications\Contracts\Notification;
-use HyperfExt\Notifications\Contracts\NotificationDispatcherInterface;
+use Vhunakoshi\Notifications\Channels\DatabaseChannel;
+use Vhunakoshi\Notifications\Channels\MailChannel;
+use Vhunakoshi\Notifications\Contracts\Notification;
+use Vhunakoshi\Notifications\Contracts\NotificationDispatcherInterface;
 
 trait RoutesNotifications
 {

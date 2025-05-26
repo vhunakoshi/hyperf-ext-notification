@@ -8,14 +8,14 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-notifications/blob/master/LICENSE
  */
-namespace HyperfExt\Notifications;
+namespace Vhunakoshi\Notifications;
 
 use Hyperf\AsyncQueue\Job;
 use Hyperf\Database\Model\Collection as ModelCollection;
 use Hyperf\Database\Model\Model;
 use Hyperf\Utils\ApplicationContext;
 use Hyperf\Utils\Collection;
-use HyperfExt\Notifications\Contracts\Notification;
+use Vhunakoshi\Notifications\Contracts\Notification;
 use Throwable;
 
 class SendQueuedNotifications extends Job
@@ -30,7 +30,7 @@ class SendQueuedNotifications extends Job
     /**
      * The notification to be sent.
      *
-     * @var \HyperfExt\Notifications\Contracts\Notification
+     * @var \Vhunakoshi\Notifications\Contracts\Notification
      */
     public $notification;
 
@@ -44,7 +44,7 @@ class SendQueuedNotifications extends Job
     /**
      * Create a new job instance.
      *
-     * @param \Hyperf\Utils\Collection|\HyperfExt\Notifications\Notifiable $notifiables
+     * @param \Hyperf\Utils\Collection|\Vhunakoshi\Notifications\Notifiable $notifiables
      * @param string[] $channels
      */
     public function __construct($notifiables, Notification $notification, array $channels = null)
@@ -84,7 +84,7 @@ class SendQueuedNotifications extends Job
     /**
      * Wrap the notifiable(s) in a collection.
      *
-     * @param \Hyperf\Utils\Collection|\HyperfExt\Notifications\Notifiable $notifiables
+     * @param \Hyperf\Utils\Collection|\Vhunakoshi\Notifications\Notifiable $notifiables
      * @return \Hyperf\Utils\Collection
      */
     protected function wrapNotifiables($notifiables)

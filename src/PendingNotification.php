@@ -8,17 +8,17 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-notifications/blob/master/LICENSE
  */
-namespace HyperfExt\Notifications;
+namespace Vhunakoshi\Notifications;
 
-use HyperfExt\Notifications\Contracts\Notification;
+use Vhunakoshi\Notifications\Contracts\Notification;
 
 /**
- * @mixin \HyperfExt\Notifications\ChannelManager
+ * @mixin \Vhunakoshi\Notifications\ChannelManager
  */
 class PendingNotification
 {
     /**
-     * @var \HyperfExt\Notifications\ChannelManager
+     * @var \Vhunakoshi\Notifications\ChannelManager
      */
     protected $manager;
 

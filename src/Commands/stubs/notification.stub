@@ -10,10 +10,10 @@ declare(strict_types=1);
  */
 namespace %NAMESPACE%;
 
-use HyperfExt\Notifications\Channels\MailChannel;
-use HyperfExt\Contract\ShouldQueue;
-use HyperfExt\Notifications\Messages\MailMessage;
-use HyperfExt\Notifications\Contracts\Notification;
+use Vhunakoshi\Notifications\Channels\MailChannel;
+use Vhunakoshi\Contract\ShouldQueue;
+use Vhunakoshi\Notifications\Messages\MailMessage;
+use Vhunakoshi\Notifications\Contracts\Notification;
 
 class %CLASS% extends Notification implements ShouldQueue
 {

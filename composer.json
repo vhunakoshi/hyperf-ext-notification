@@ -20,7 +20,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "HyperfExt\\Notifications\\": "src/"
+            "Vhunakoshi\\Notifications\\": "src/"
         }
     },
     "autoload-dev": {
@@ -40,15 +40,13 @@
         "hyperf/framework": "^3.1",
         "hyperf/logger": "^3.1",
         "ramsey/uuid": "^4.7",
-        "vhunakoshi/hyperf-ext-contract": "dev-main"
+        "vhunakoshi/hyperf-ext-contract": "^1.0"
     },
     "suggest": {
         "hyperf-ext/mail": "Required to use the mail transport (^3.1).",
         "hyperf-ext/sms": "Required to use the SMS transport (^3.1).",
         "hyperf/database": "Required to use the database transport (^3.1)."
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "config": {
         "sort-packages": true
     },
@@ -59,7 +57,7 @@
     },
     "extra": {
         "hyperf": {
-            "config": "HyperfExt\\Notifications\\ConfigProvider"
+            "config": "Vhunakoshi\\Notifications\\ConfigProvider"
         }
     },
     "require-dev": {

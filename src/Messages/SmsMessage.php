@@ -8,9 +8,9 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-notifications/blob/master/LICENSE
  */
-namespace HyperfExt\Notifications\Messages;
+namespace Vhunakoshi\Notifications\Messages;
 
-use HyperfExt\Sms\Smsable;
+use Vhunakoshi\Sms\Smsable;
 
 class SmsMessage extends Smsable
 {

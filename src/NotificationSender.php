@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-notifications/blob/master/LICENSE
  */
-namespace HyperfExt\Notifications;
+namespace Vhunakoshi\Notifications;
 
 use Hyperf\AsyncQueue\Driver\DriverFactory;
 use Hyperf\Contract\TranslatorInterface;
@@ -18,12 +18,12 @@ use Hyperf\Event\EventDispatcher;
 use Hyperf\Utils\ApplicationContext;
 use Hyperf\Utils\Collection;
 use Hyperf\Utils\Coroutine;
-use HyperfExt\Contract\HasLocalePreference;
-use HyperfExt\Contract\ShouldQueue;
-use HyperfExt\Notifications\Channels\DatabaseChannel;
-use HyperfExt\Notifications\Contracts\Notification;
-use HyperfExt\Notifications\Events\NotificationSending;
-use HyperfExt\Notifications\Events\NotificationSent;
+use Vhunakoshi\Contract\HasLocalePreference;
+use Vhunakoshi\Contract\ShouldQueue;
+use Vhunakoshi\Notifications\Channels\DatabaseChannel;
+use Vhunakoshi\Notifications\Contracts\Notification;
+use Vhunakoshi\Notifications\Events\NotificationSending;
+use Vhunakoshi\Notifications\Events\NotificationSent;
 use Ramsey\Uuid\Uuid;
 
 class NotificationSender
@@ -31,7 +31,7 @@ class NotificationSender
     /**
      * The notification manager instance.
      *
-     * @var \HyperfExt\Notifications\ChannelManager
+     * @var \Vhunakoshi\Notifications\ChannelManager
      */
     protected $manager;
 
@@ -160,7 +160,7 @@ class NotificationSender
      * Queue the given notification instances.
      *
      * @param mixed $notifiables
-     * @param \HyperfExt\Contract\ShouldQueue|\HyperfExt\Notifications\Contracts\Notification
+     * @param \Vhunakoshi\Contract\ShouldQueue|\Vhunakoshi\Notifications\Contracts\Notification
      */
     protected function queueNotification($notifiables, Notification $notification)
     {

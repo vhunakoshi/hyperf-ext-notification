@@ -8,18 +8,18 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-notifications/blob/master/LICENSE
  */
-namespace HyperfExt\Notifications;
+namespace Vhunakoshi\Notifications;
 
 use Hyperf\Utils\ApplicationContext;
-use HyperfExt\Notifications\Contracts\NotificationDispatcherInterface;
+use Vhunakoshi\Notifications\Contracts\NotificationDispatcherInterface;
 
 /**
- * @method static \HyperfExt\Notifications\PendingNotification locale(string $locale)
- * @method static \HyperfExt\Notifications\Contracts\ChannelInterface channel(null|string $name = null)
+ * @method static \Vhunakoshi\Notifications\PendingNotification locale(string $locale)
+ * @method static \Vhunakoshi\Notifications\Contracts\ChannelInterface channel(null|string $name = null)
  * @method static void send(array|\Hyperf\Utils\Collection|mixed $notifiables, $notification)
  * @method static void sendNow(array|\Hyperf\Utils\Collection|mixed $notifiables, $notification)
  *
- * @see \HyperfExt\Notifications\ChannelManager
+ * @see \Vhunakoshi\Notifications\ChannelManager
  */
 class Notification
 {

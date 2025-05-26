@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-notifications/blob/master/LICENSE
  */
-namespace HyperfExt\Notifications;
+namespace Vhunakoshi\Notifications;
 
 use Hyperf\Database\Model\Model;
 
@@ -105,7 +105,7 @@ class DatabaseNotification extends Model
     /**
      * Create a new database notification collection instance.
      *
-     * @return \HyperfExt\Notifications\DatabaseNotificationCollection
+     * @return \Vhunakoshi\Notifications\DatabaseNotificationCollection
      */
     public function newCollection(array $models = [])
     {

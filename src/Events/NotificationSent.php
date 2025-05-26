@@ -8,9 +8,9 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/vhunakoshi/hyperf-ext-notifications/blob/master/LICENSE
  */
-namespace HyperfExt\Notifications\Events;
+namespace Vhunakoshi\Notifications\Events;
 
-use HyperfExt\Notifications\Contracts\Notification;
+use Vhunakoshi\Notifications\Contracts\Notification;
 
 class NotificationSent
 {
@@ -24,7 +24,7 @@ class NotificationSent
     /**
      * The notification instance.
      *
-     * @var \HyperfExt\Notifications\Contracts\Notification
+     * @var \Vhunakoshi\Notifications\Contracts\Notification
      */
     public $notification;
 
